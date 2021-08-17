@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Course
 {
@@ -6,21 +7,193 @@ namespace Course
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            bool c1 = a > 10;
-            bool c2 = a < 20;
-            bool c3 = a == 10;
+
+            Triangulo x, y;
+            x = new Triangulo();
+            y = new Triangulo();
+
+
+            Console.WriteLine("Entre com as medidas do triângulo X: ");
+            x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Entre com as medidas do triângulo Y: ");
+            y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double p = (x.A + x.B + x.C) / 2.0;
+            double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+
+            p = (y.A + y.B + y.C) / 2.0;
+            double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+
+            Console.WriteLine("Área de x = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            Console.WriteLine("Área de y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+
+
+            if (areaX > areaY)
+            {
+                Console.WriteLine("Maior área: X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            }
+
+
+            else
+            {
+                Console.WriteLine("Maior área: Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            }
 
 
 
-            Console.WriteLine(c1);
-            Console.WriteLine(c2);
-            Console.WriteLine("________________________________________");
 
 
-            bool c5 = a <= 10;
 
-            Console.WriteLine(c5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //    double xA, xB, xC, yA, yB, yC;
+
+            //   Console.WriteLine("Entre com as medidas do triângulo X: ");
+            //    xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //   xB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //    xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //    Console.WriteLine("Entre com as medidas do triângulo Y: ");
+            //    yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //    yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            //   yC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //   double p = (xA + xB + xC) / 2.0;
+            //   double areaX = Math.Sqrt(p * (p - xA) * (p - yB) * (p - xC));
+
+            //   p = (yA + yB +yC) / 2.0;
+            //   double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+
+            //    Console.WriteLine("Área de x = " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            //    Console.WriteLine("Área de y = " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+
+
+            //   if (areaX > areaY)
+            //   {
+            //     Console.WriteLine("Maior área: X: " + areaX.ToString("F4", CultureInfo.InvariantCulture));
+            //  }
+
+
+            //   else
+            //   {
+            //       Console.WriteLine("Maior área: Y: " + areaY.ToString("F4", CultureInfo.InvariantCulture));
+            //   }
+
+
+
+
+
+
+            //    Console.Write("Quantos números inteiros você vai digitar? ");
+            //    int n = int.Parse(Console.ReadLine());
+
+            //    int soma = 0;
+
+            //     for(int i = 1; i <= n; i++)
+            //     {
+            //        Console.Write("Valor #{0}: ", i);
+            //       int valor = int.Parse(Console.ReadLine());
+            //        soma = soma + valor;
+
+            //    }
+
+            //    Console.WriteLine("Soma =" + soma);
+
+
+
+
+            //  Console.WriteLine("Digite a senha: ");
+            //   double x = double.Parse(Console.ReadLine());
+
+            //    while (x != 2002)
+            //    {
+            //    Console.WriteLine("Senha invalida");
+            //    x = double.Parse(Console.ReadLine());
+
+
+
+            //   }
+
+
+            //   Console.WriteLine("Acesso Permitido");
+
+
+
+
+            //    Console.WriteLine("Digite um número: ");
+            //    double x = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+
+
+            //   while (x >= 0.0)
+            //   {
+            //   double raiz = Math.Sqrt(x);
+
+            //  Console.WriteLine(raiz.ToString("F3", CultureInfo.InvariantCulture));
+            //   Console.Write("Digote outro numero: ");
+
+
+            //   x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            //    }
+            //   Console.WriteLine("Número negativo");
+
+
+
+
+
+
+            //    Console.WriteLine("Digite três Numeros");
+            //    int n1 = int.Parse(Console.ReadLine());
+            //   int n2 = int.Parse(Console.ReadLine());
+            //    int n3 = int.Parse(Console.ReadLine());
+
+            //    double resultado = Maior(n1, n2, n3);
+
+            //    Console.WriteLine("Maior = " + resultado);
+
+
+
+
+
+            //   int a = 10;
+            //   bool c1 = a > 10;
+            //   bool c2 = a < 20;
+            //   bool c3 = a == 10;
+
+
+
+            //   Console.WriteLine(c1);
+            //   Console.WriteLine(c2);
+            //   Console.WriteLine("________________________________________");
+
+
+            //   bool c5 = a <= 10;
+
+            //     Console.WriteLine(c5);
 
 
 
@@ -32,11 +205,11 @@ namespace Course
 
 
             //Console.WriteLine("Digite um numero: ");
-           // double a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-           // Console.WriteLine("Digite outro numero: ");
+            // double a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            // Console.WriteLine("Digite outro numero: ");
             //double b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-          //  double soma = a + b;
+            //  double soma = a + b;
 
             //Console.WriteLine($"A soma dos números são: {soma.ToString("F4", CultureInfo.InvariantCulture)}");
 
@@ -234,6 +407,42 @@ namespace Course
             //Console.WriteLine(saldo.ToString("f2"));
             //Console.WriteLine(saldo.ToString("f4"));
             //Console.WriteLine(saldo.ToString("f4",CultureInfo.InvariantCulture));
+
+
+            //    }
+
+
+
+            //   static int Maior(int a, int b, int c)
+            //    {
+            //   int m;
+
+            //   if (a > b && a > c)
+            //    {
+            //       m = a;
+            //    }
+            //    else if (b > c)
+            //    {
+            //        m = b;
+            //    }
+            //    else
+            //   {
+            //        m = c;
+            //   }
+
+            //   return m;
+
+
+
+
         }
+
+
+
+
+
+
+
+
     }
 }

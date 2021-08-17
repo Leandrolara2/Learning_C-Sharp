@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ws-vs2021\\Course\\Course\\Course.csproj": {}
+    "D:\\ws-vs2021\\Learning_C-Sharp\\Course\\Course\\Course.csproj": {}
   },
   "projects": {
-    "D:\\ws-vs2021\\Course\\Course\\Course.csproj": {
+    "D:\\ws-vs2021\\Learning_C-Sharp\\Course\\Course\\Course.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ws-vs2021\\Course\\Course\\Course.csproj",
+        "projectUniqueName": "D:\\ws-vs2021\\Learning_C-Sharp\\Course\\Course\\Course.csproj",
         "projectName": "Course",
-        "projectPath": "D:\\ws-vs2021\\Course\\Course\\Course.csproj",
+        "projectPath": "D:\\ws-vs2021\\Learning_C-Sharp\\Course\\Course\\Course.csproj",
         "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
-        "outputPath": "D:\\ws-vs2021\\Course\\Course\\obj\\",
+        "outputPath": "D:\\ws-vs2021\\Learning_C-Sharp\\Course\\Course\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
